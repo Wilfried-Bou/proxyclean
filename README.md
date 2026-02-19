@@ -57,3 +57,19 @@ All commands are run from the root of the project, from a terminal:
 
 ## Lignes à modifier
 1. astro.config.mjs : ligne 16: mettre le bon lien du site
+
+
+## Règlements loi RGPD
+Le droit des personnes
+
+Toute personne qui t'a envoyé ses données a 4 droits fondamentaux :
+
+    Droit d'accès : Elle peut te demander ce que tu possèdes sur elle.
+
+    Droit de rectification : Elle peut te demander de modifier une information.
+
+    Droit à l'oubli : Elle peut te demander de supprimer son CV de tes fichiers immédiatement.
+
+    Droit d'opposition : Elle peut refuser que ses données soient utilisées pour autre chose que le recrutement (ex: ne pas mettre l'email d'un candidat dans ta liste de newsletter client).
+
+    Les CV ne peuvent être garder que 2ans maximum.
