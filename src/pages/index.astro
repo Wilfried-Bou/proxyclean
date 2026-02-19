@@ -1,6 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
+import {Image} from "astro:assets";
+
+import logo from '../assets/logo2.png';
+import picto1 from '../assets/vision/1pouce.png';
+import picto2 from '../assets/vision/2index.png';
+import picto3 from '../assets/vision/3majeur.png';
+import picto4 from '../assets/vision/4annulaire.png';
+import picto5 from '../assets/vision/5auriculaire.png';
 ---
 <Layout>
 	<Breadcrumb ></Breadcrumb>
@@ -24,7 +32,14 @@ import Breadcrumb from '../components/Breadcrumb.astro';
 
 			<div class="flex-1 flex justify-center md:justify-end">
 				<div class="bg-white p-8 md:p-12 rounded-2xl shadow-2xl over:scale-105 cursor-default">
-					<img src="/logo2.png" alt="logo" class="w-40 md:w-58 h-auto object-contain">
+					<Image 
+						src={logo}
+						alt="Logo proxi'clean"
+						width={250}
+						height={250}
+						class="w-full h-full object-cover"
+						loading="lazy" 
+					/>
 				</div>
 			</div>
 		</div>
@@ -56,9 +71,14 @@ import Breadcrumb from '../components/Breadcrumb.astro';
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
                 <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-primaryTheme cursor-default flex flex-col h-full">
                     <div class="text-secondaryTheme mb-4 flex justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 10h4a2 2 0 012 2v1a2 2 0 01-2 2h-1c-1.767 0-3 1.333-3 3V19a2 2 0 01-2 2H6a2 2 0 01-2-2V9a2 2 0 012-2h1.382a1 1 0 00.894-.553l1.448-2.895A1 1 0 0110.618 3H12v7" />
-                        </svg>
+                        <Image 
+							src={picto1}
+							alt="Pictograme pouce"
+							width="200"
+							height="200"
+							class="w-24 h-24 md:w-32 md:h-32 object-contain mx-auto"
+							loading="lazy" 
+						/>
                     </div>
                     <h3 class="font-bold text-theme leading-tight min-h-[3rem] flex items-center justify-center">Votre coup de pouce</h3>
                     <p class="text-sm text-gray-500 mt-2">Des agents formés et encadrés, des consignes claires, des contrôles réguliers.</p>
@@ -67,9 +87,14 @@ import Breadcrumb from '../components/Breadcrumb.astro';
 
                 <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-primaryTheme cursor-default flex flex-col h-full">
                     <div class="text-secondaryTheme mb-4 flex justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5" />
-                        </svg>
+                        <Image 
+							src={picto2}
+							alt="Pictograme index"
+							width="200"
+							height="200"
+							class="w-24 h-24 md:w-32 md:h-32 object-contain mx-auto"
+							loading="lazy" 
+						/>
                     </div>
                     <h3 class="font-bold text-theme leading-tight font-bold text-theme leading-tight min-h-[3rem] flex items-center justify-center">Une direction claire</h3>
                     <p class="text-sm text-gray-500 mt-2">Une organisation structurée, des engagements écrits et des procédures claires.</p>
@@ -78,9 +103,14 @@ import Breadcrumb from '../components/Breadcrumb.astro';
 
                 <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-primaryTheme cursor-default flex flex-col h-full">
                     <div class="text-secondaryTheme mb-4 flex justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
+                        <Image 
+							src={picto3}
+							alt="Pictograme majeur"
+							width="200"
+							height="200"
+							class="w-24 h-24 md:w-32 md:h-32 object-contain mx-auto"
+							loading="lazy" 
+						/>
                     </div>
                     <h3 class="font-bold text-theme leading-tight font-bold text-theme leading-tight min-h-[3rem] flex items-center justify-center">Votre satisfaction</h3>
                     <p class="text-sm text-gray-500 mt-2">Vos contraintes, votre réalité terrain, vos priorités.</p>
@@ -90,9 +120,14 @@ import Breadcrumb from '../components/Breadcrumb.astro';
 
                 <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-primaryTheme cursor-default flex flex-col h-full">
                     <div class="text-secondaryTheme mb-4 flex justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                        </svg>
+                        <Image 
+							src={picto4}
+							alt="Pictograme annulaire"
+							width="200"
+							height="200"
+							class="w-24 h-24 md:w-32 md:h-32 object-contain mx-auto"
+							loading="lazy" 
+						/>
                     </div>
                     <h3 class="font-bold text-theme leading-tight font-bold text-theme leading-tight min-h-[3rem] flex items-center justify-center">Des partenaires engagés</h3>
                     <p class="text-sm text-gray-500 mt-2">Des fournisseurs fiables et réactifs, des solutions adaptées.</p>
@@ -102,9 +137,14 @@ import Breadcrumb from '../components/Breadcrumb.astro';
 
                 <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-primaryTheme cursor-default flex flex-col h-full">
                     <div class="text-secondaryTheme mb-4 flex justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01m-.01 4h.01" />
-                        </svg>
+                        <Image 
+							src={picto5}
+							alt="Pictograme auriculaire"
+							width="200"
+							height="200"
+							class="w-24 h-24 md:w-32 md:h-32 object-contain mx-auto"
+							loading="lazy" 
+						/>
                     </div>
                     <h3 class="font-bold text-theme leading-tight font-bold text-theme leading-tight min-h-[3rem] flex items-center justify-center">Le suivi et traçabilité</h3>
                     <p class="text-sm text-gray-500 mt-2">Suivi des prestations, contrôles qualité tracés, indicateurs partagés.</p>
