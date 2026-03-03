@@ -52,7 +52,7 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Mise en place du formulaire d'envoie de CV
 1. Créer un compte sur https://forminit.com/ avec le mail contact@proxiclean-services.fr
 2. Créer un formulaire avec le nom : Recrutement ProxiClean
-3. Récupérer l'URL. Sur le fichier rejoindre.astro, le mettre ligne 29 à la place du action=""
+3. Récupérer l'URL. Sur le fichier rejoindre.astro, le mettre ligne 38 à la place du action=""
 
 
 ## Lignes à modifier

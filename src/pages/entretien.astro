@@ -1,6 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
+import {Image} from "astro:assets";
+
+import grandeDistribution from "../assets/entretien/gDristibution.jpg";
+import tertiaire from "../assets/entretien/tertiaire.jpg";
 ---
 <Layout title="Entretien Régulier | Proxi'Clean Services" 
         description="Solutions de nettoyage pour l'industrie, la logistique, le tertiaire et la grande distribution à Toulouse et en Occitanie.">
@@ -79,10 +83,15 @@ import Breadcrumb from '../components/Breadcrumb.astro';
                     "Des espaces accueillants et une expérience professionnelle valorisée."
                 </div>
             </div>
-            <div class="md:w-1/2 bg-gray-200 h-64 rounded-3xl overflow-hidden shadow-xl">
-                <div class="w-full h-full flex items-center justify-center text-gray-400">
-                    <img src="https://picsum.photos/800/300?random=3" alt="Image tertiaire">
-                </div>
+            <div class="md:w-1/2 h-64 rounded-3xl overflow-hidden shadow-xl">
+                <Image 
+                    src={tertiaire}
+                    alt="Secteur tertiaire Proxi'clean"
+                    width={800} 
+                    height={600}
+                    class="w-full h-full object-cover shadow-inner"
+                    loading="lazy" 
+                />
             </div>
         </div>
     </section>
@@ -103,10 +112,15 @@ import Breadcrumb from '../components/Breadcrumb.astro';
                     "Un point de vente attractif, sécurisé et conforme aux  standards du secteur."
                 </div>
             </div>
-            <div class="md:w-1/2 bg-gray-300 h-64 rounded-3xl overflow-hidden shadow-xl">
-                <div class="w-full h-full flex items-center justify-center text-gray-500">
-                    <img src="https://picsum.photos/800/300?random=4" alt="Image distribution">
-                </div>
+            <div class="md:w-1/2 h-64 rounded-3xl overflow-hidden shadow-xl">
+                <Image 
+                    src={grandeDistribution}
+                    alt="Secteur grande distribution Proxi'clean"
+                    width={800} 
+                    height={600}
+                    class="w-full h-full object-cover shadow-inner"
+                    loading="lazy" 
+                />
             </div>
         </div>
     </section>
