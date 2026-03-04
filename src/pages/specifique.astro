@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 import { Image } from 'astro:assets';
+
+import nuisible from "../assets/specifique/nuisible.jpg";
 ---
 <Layout title="Nettoyage Spécifique | Proxi'Clean Services" 
         description="Nettoyage après travaux, vitrerie haute hauteur, remise en état et protocoles sanitaires spéciaux à Toulouse et en Occitanie.">
@@ -35,10 +37,15 @@ import { Image } from 'astro:assets';
                     "Des locaux prêts à être exploités immédiatement."
                 </div>
             </div>
-            <div class="md:w-1/2 bg-gray-200 h-64 rounded-3xl overflow-hidden shadow-xl">
-                <div class="w-full h-full flex items-center justify-center text-gray-400">
-                    <img src="https://picsum.photos/800/300?random=1" alt="Après travaux">
-                </div>
+            <div class="md:w-1/2 h-64 rounded-3xl overflow-hidden shadow-xl">
+                <Image 
+                    src={nuisible}
+                    alt="Nettoyage après travaux Proxi'clean"
+                    width={800} 
+                    height={600}
+                    class="w-full h-full object-cover shadow-inner"
+                    loading="lazy" 
+                />
             </div>
         </div>
     </section>
@@ -60,10 +67,15 @@ import { Image } from 'astro:assets';
                     "Des vitres parfaitement entretenues, une luminosité préservée et une image de marque renforcée."
                 </div>
             </div>
-            <div class="md:w-1/2 bg-gray-200 h-64 rounded-3xl overflow-hidden shadow-xl">
-                <div class="w-full h-full flex items-center justify-center text-gray-400">
-                    <img src="https://picsum.photos/800/300?random=2" alt="Vitrerie en hauteur">
-                </div>
+            <div class="md:w-1/2 h-64 rounded-3xl overflow-hidden shadow-xl">
+                <Image 
+                    src={nuisible}
+                    alt="Secteur vitrerie Proxi'clean"
+                    width={800} 
+                    height={600}
+                    class="w-full h-full object-cover shadow-inner"
+                    loading="lazy" 
+                />
             </div>
         </div>
     </section>
@@ -85,10 +97,15 @@ import { Image } from 'astro:assets';
                     "Une production optimisée et des installations préservées."
                 </div>
             </div>
-            <div class="md:w-1/2 bg-gray-200 h-64 rounded-3xl overflow-hidden shadow-xl">
-                <div class="w-full h-full flex items-center justify-center text-gray-400">
-                    <img src="https://picsum.photos/800/300?random=3" alt="Panneaux solaires">
-                </div>
+            <div class="md:w-1/2 h-64 rounded-3xl overflow-hidden shadow-xl">
+                <Image 
+                    src={nuisible}
+                    alt="Nettoyage panneaux solaires Proxi'clean"
+                    width={800} 
+                    height={600}
+                    class="w-full h-full object-cover shadow-inner"
+                    loading="lazy" 
+                />
             </div>
         </div>
     </section>
@@ -110,10 +127,15 @@ import { Image } from 'astro:assets';
                     "Un environnement assaini, sécurisé et traité avec la plus grande rigueur."
                 </div>
             </div>
-            <div class="md:w-1/2 bg-gray-200 h-64 rounded-3xl overflow-hidden shadow-xl">
-                <div class="w-full h-full flex items-center justify-center text-gray-400">
-                    <img src="https://picsum.photos/800/300?random=4" alt="Post mortem">
-                </div>
+            <div class="md:w-1/2 h-64 rounded-3xl overflow-hidden shadow-xl">
+                <Image 
+                    src={nuisible}
+                    alt="Nettoyage Post Mortem Proxi'clean"
+                    width={800} 
+                    height={600}
+                    class="w-full h-full object-cover shadow-inner"
+                    loading="lazy" 
+                />
             </div>
         </div>
     </section>
@@ -135,11 +157,16 @@ import { Image } from 'astro:assets';
                     "Des lieux réhabilités et un environnement sain retrouvé."
                 </div>
             </div>
-            <div class="md:w-1/2 bg-gray-200 h-64 rounded-3xl overflow-hidden shadow-xl">
-                <div class="w-full h-full flex items-center justify-center text-gray-400">
-                    <img src="https://picsum.photos/800/300?random=5" alt="Syndrome de diogène">
+                <div class="md:w-1/2 h-64 rounded-3xl overflow-hidden shadow-xl">
+                    <Image 
+                        src={nuisible}
+                        alt="Nettoyage Diogène Proxi'clean"
+                        width={800} 
+                        height={600}
+                        class="w-full h-full object-cover shadow-inner"
+                        loading="lazy" 
+                    />
                 </div>
-            </div>
         </div>
     </section>
 
@@ -180,80 +207,18 @@ import { Image } from 'astro:assets';
                 </div>
 
                 <div class="bg-gray-200 h-64 rounded-3xl overflow-hidden shadow-xl">
-                    <div class="w-full h-full flex items-center justify-center text-gray-400">
-                        <img src="https://picsum.photos/800/300?random=6" alt="Nuisibles">
-                    </div>
+                    <Image 
+                        src={nuisible}
+                        alt="Lutte contre les nuisibles Proxi'clean"
+                        width={800} 
+                        height={600}
+                        class="w-full h-full object-cover shadow-inner"
+                        loading="lazy" 
+                    />
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- <section class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <div id="post-mortem" class="p-8 rounded-3xl border border-gray-100 shadow-lg hover:shadow-xl transition-shadow">
-                    <h3 class="text-2xl font-bold text-primaryTheme mb-4">Nettoyage post mortem</h3>
-                    <p class="text-gray-600 leading-relaxed mb-4 font-bold text-justify">
-                        Ces interventions exigent expertise, rigueur et respect absolu des protocoles sanitaires.
-                    </p>
-                    <p class="text-gray-600 leading-relaxed text-sm mb-4 text-justify">
-                        Proxi’Clean déploie des procédures strictes incluant <span class="font-bold">la désinfection par ozonation</span>, le traitement des surfaces, l’élimination des agents biologiques et la neutralisation des odeurs persistantes.
-                    </p>
-                    <p class="text-gray-600 leading-relaxed text-sm mb-4 text-justify">
-                        Nos équipes interviennent avec discrétion, professionnalisme et respect des lieux.
-                    </p>
-                    <p class="font-bold text-secondaryTheme text-sm mt-10 text-justify">
-                        Résultat : Un environnement assaini, sécurisé et traité avec la plus grande rigueur.
-                    </p>
-                </div>
-
-                <div id="diogene" class="p-8 rounded-3xl border border-gray-100 shadow-lg hover:shadow-xl transition-shadow">
-                    <h3 class="text-2xl font-bold text-primaryTheme mb-4">Nettoyage Diogène</h3>
-                    <p class="text-gray-600 leading-relaxed mb-4 font-bold text-justify">
-                        Chaque situation nécessite une approche méthodique et profondément humaine.
-                    </p>
-                    <p class="text-gray-600 leading-relaxed text-sm mb-4 text-justify">
-                        Nous assurons le tri, l’évacuation des encombrants, le nettoyage intensif, la désinfection et le traitement des odeurs afin de restaurer des conditions sanitaires adaptées.
-                    </p>
-                    <p class="text-gray-600 leading-relaxed text-sm mb-4 text-justify">
-                        Toutes nos interventions sont réalisées dans le respect des occupants et avec une organisation maîtrisée.
-                    </p>
-                    <p class="font-bold text-secondaryTheme text-sm text-justify">
-                        Résultat : Des lieux réhabilités et un environnement sain retrouvé.
-                    </p>
-                </div>
-
-                <div id="nuisibles" class="relative p-8 rounded-3xl border border-gray-100 shadow-lg hover:shadow-xl transition-shadow bg-white overflow-hidden">
-                    <div class="absolute top-2 right-6 flex items-center gap-1.5 bg-green-100 text-green-700 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border border-green-200 shadow-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                        </svg>
-                        Entreprise Habilitée
-                    </div>
-
-                    <h3 class="text-2xl font-bold text-primaryTheme mb-4">Lutte contre les nuisibles</h3>
-                    <p class="text-gray-600 leading-relaxed mb-4 font-bold text-justify">
-                        Prévenir et traiter les nuisibles est un enjeu sanitaire majeur.
-                    </p>
-                    <p class="text-gray-600 leading-relaxed text-sm mb-4 text-justify">
-                        Nous mettons en place des dispositifs de détection, des plans d’actions préventifs et des traitements ciblés, dans le respect des normes en vigueur.
-                    </p>
-                    <p class="text-gray-600 leading-relaxed text-sm mb-4 text-justify">
-                        Le suivi est tracé pour garantir l’efficacité dans la durée.
-                    </p>
-                    <p class="font-bold text-secondaryTheme text-sm mt-10">
-                        Résultat : un site protégé, conforme et durablement sécurisé.
-                    </p>
-
-                    <div class="pt-4 border-t border-gray-50">
-                        <span class="text-[10px] text-gray-400 uppercase tracking-widest">Agrément Ministériel</span>
-                        <p class="text-xs font-mono text-gray-500">N° d'accréditation : 050392 / PROXI-CLEAN</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <section class="py-20 text-center bg-gray-50"> 
         <h2 class="text-3xl font-bold mb-8">Confiez vos interventions complexes à des spécialistes</h2>

@@ -5,6 +5,9 @@ import {Image} from "astro:assets";
 
 import grandeDistribution from "../assets/entretien/gDristibution.jpg";
 import tertiaire from "../assets/entretien/tertiaire.jpg";
+import dataCenter from "../assets/entretien/dataCenter.jpg";
+import industrie from "../assets/entretien/industrie.jpg";
+import logistique from "../assets/entretien/logistique.jpg";
 ---
 <Layout title="Entretien Régulier | Proxi'Clean Services" 
         description="Solutions de nettoyage pour l'industrie, la logistique, le tertiaire et la grande distribution à Toulouse et en Occitanie.">
@@ -36,10 +39,15 @@ import tertiaire from "../assets/entretien/tertiaire.jpg";
                     "Un environnement sécurisé pour une qualité de production optimale."
                 </div>
             </div>
-            <div class="md:w-1/2 bg-gray-200 h-64 rounded-3xl overflow-hidden shadow-xl">
-                <div class="w-full h-full flex items-center justify-center text-gray-400">
-                    <img src="https://picsum.photos/800/300?random=1" alt="Image industrie">
-                </div>
+            <div class="md:w-1/2 h-64 rounded-3xl overflow-hidden shadow-xl">
+                <Image 
+                    src={industrie}
+                    alt="Secteur industrielle Proxi'clean"
+                    width={800} 
+                    height={600}
+                    class="w-full h-full object-cover shadow-inner"
+                    loading="lazy" 
+                />
             </div>
         </div>
     </section>
@@ -60,10 +68,15 @@ import tertiaire from "../assets/entretien/tertiaire.jpg";
                     "Des espaces fonctionnels, sûrs et parfaitement entretenus."
                 </div>
             </div>
-            <div class="md:w-1/2 bg-gray-300 h-64 rounded-3xl overflow-hidden shadow-xl">
-                <div class="w-full h-full flex items-center justify-center text-gray-500">
-                    <img src="https://picsum.photos/800/300?random=2" alt="Image logistique">
-                </div>
+            <div class="md:w-1/2 h-64 rounded-3xl overflow-hidden shadow-xl">
+                <Image 
+                    src={logistique}
+                    alt="Secteur logistique Proxi'clean"
+                    width={800} 
+                    height={600}
+                    class="w-full h-full object-cover shadow-inner"
+                    loading="lazy" 
+                />
             </div>
         </div>
     </section>
@@ -140,10 +153,15 @@ import tertiaire from "../assets/entretien/tertiaire.jpg";
                     "Un environnement contrôlé qui protège vos équipements stratégiques."
                 </div>
             </div>
-            <div class="md:w-1/2 bg-gray-200 h-64 rounded-3xl overflow-hidden shadow-xl">
-                <div class="w-full h-full flex items-center justify-center text-gray-400">
-                    <img src="https://picsum.photos/800/300?random=5" alt="Image data center">
-                </div>
+            <div class="md:w-1/2 h-64 rounded-3xl overflow-hidden shadow-xl">
+                <Image 
+                    src={dataCenter}
+                    alt="Secteur du data center Proxi'clean"
+                    width={800} 
+                    height={600}
+                    class="w-full h-full object-cover shadow-inner"
+                    loading="lazy" 
+                />
             </div>
         </div>
     </section>
