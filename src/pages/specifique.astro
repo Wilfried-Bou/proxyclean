@@ -21,7 +21,7 @@ import nuisible from "../assets/specifique/nuisible.jpg";
     </section>
 
         <!-- APRES TRAVAUX -->
-    <section id="travaux" class="py-20 bg-white">
+    <section id="travaux" class="py-10 bg-white md:py-20">
         <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/2">
                 <div class="inline-block px-4 py-1 rounded-full bg-blue-50 text-primaryTheme font-bold text-sm mb-4 uppercase tracking-wider">Éclat & Finition</div>
@@ -51,7 +51,7 @@ import nuisible from "../assets/specifique/nuisible.jpg";
     </section>
 
     <!-- VITRERIE-->
-    <section id="vitrerie" class="py-20 bg-gray-50">
+    <section id="vitrerie" class="py-10 bg-gray-50 md:py-20">
         <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row-reverse items-center gap-12">
             <div class="md:w-1/2">
                 <div class="inline-block px-4 py-1 rounded-full bg-blue-50 text-primaryTheme font-bold text-sm mb-4 uppercase tracking-wider">Expertise en hauteur</div>
@@ -81,7 +81,7 @@ import nuisible from "../assets/specifique/nuisible.jpg";
     </section>
 
     <!-- PANNEAUX SOLAIRES -->
-    <section id="panneaux-solaires" class="py-20 bg-white">
+    <section id="panneaux-solaires" class="py-10 bg-white md:py-20">
         <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/2">
                 <div class="inline-block px-4 py-1 rounded-full bg-blue-50 text-primaryTheme font-bold text-sm mb-4 uppercase tracking-wider">Rendement & Énergie</div>
@@ -111,7 +111,7 @@ import nuisible from "../assets/specifique/nuisible.jpg";
     </section>
 
     <!-- POST MORTEM-->
-    <section id="post-mortem" class="py-20 bg-gray-50">
+    <section id="post-mortem" class="py-10 bg-gray-50 md:py-20">
         <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row-reverse items-center gap-12">
             <div class="md:w-1/2">
                 <div class="inline-block px-4 py-1 rounded-full bg-blue-50 text-primaryTheme font-bold text-sm mb-4 uppercase tracking-wider">Urgence Sanitaire</div>
@@ -141,7 +141,7 @@ import nuisible from "../assets/specifique/nuisible.jpg";
     </section>
 
     <!-- DIOGENE -->
-    <section id="diogene" class="py-20 bg-white">
+    <section id="diogene" class="py-10 bg-white md:py-20">
         <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/2">
                 <div class="inline-block px-4 py-1 rounded-full bg-blue-50 text-primaryTheme font-bold text-sm mb-4 uppercase tracking-wider">Réhabilitation & Salubrité</div>
@@ -171,12 +171,21 @@ import nuisible from "../assets/specifique/nuisible.jpg";
     </section>
 
         <!-- NUISIBLES -->
-    <section id="nuisibles" class="py-20 bg-gray-50">
+    <section id="nuisibles" class="py-10 bg-gray-50 md:py-20">
         <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row-reverse items-center gap-12">
             
             <div class="md:w-1/2">
-                <div class="inline-block px-4 py-1 rounded-full bg-blue-50 text-primaryTheme font-bold text-sm mb-4 uppercase tracking-wider">
-                    Protection & Élimination
+                <div class="flex flex-nowrap items-center gap-2 mb-4 w-full">
+                    <div class="whitespace-nowrap px-3 py-1 rounded-full bg-blue-50 text-primaryTheme font-bold text-[10px] sm:text-sm uppercase tracking-wider border border-blue-100">
+                        Protection & Élimination
+                    </div>
+                    
+                    <div class="flex md:hidden items-center gap-1 whitespace-nowrap bg-green-100 text-green-700 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border border-green-200 shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        <span class="shrink-0">entreprise Habilitée</span>
+                    </div>
                 </div>
 
                 <h2 class="text-3xl font-bold text-gray-800 mb-6 font-title">Lutte contre les nuisibles</h2>
@@ -199,7 +208,7 @@ import nuisible from "../assets/specifique/nuisible.jpg";
             </div>
             
             <div class="md:w-1/2 relative pt-10"> 
-                <div class="absolute top-0 left-0 flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider border border-green-200 shadow-sm">
+                <div class="hidden md:flex absolute top-0 left-0 items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider border border-green-200 shadow-sm">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                     </svg>
@@ -223,7 +232,7 @@ import nuisible from "../assets/specifique/nuisible.jpg";
     <section class="py-20 text-center bg-gray-50"> 
         <h2 class="text-3xl font-bold mb-8">Confiez vos interventions complexes à des spécialistes</h2>
         <a href="/contact" class="btn btn-lg bg-secondaryTheme text-white border-none hover:scale-105 transition-transform inline-flex items-center gap-2">
-            <span>Demander mon devis personnalisé</span>
+            <span>Demander votre devis personnalisé</span>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
             </svg>

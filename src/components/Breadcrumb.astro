@@ -1,5 +1,6 @@
 ---
 const { currentPage } = Astro.props;
+const isHome = !currentPage || currentPage ==="Accueil";
 ---
 <!-- FIL D'ARIANE -->
 <nav class="max-w-6xl mx-auto px-6 py-4 text-sm bg-gray-50/50">
@@ -12,7 +13,9 @@ const { currentPage } = Astro.props;
                 Accueil
             </a>
         </li>
-        <li><span class="text-gray-300">/</span></li>
-        <li class="text-primaryTheme font-medium">{currentPage}</li>
+        { !isHome && (
+            <li><span class="text-gray-300">/</span></li>
+            <li class="text-primaryTheme font-medium">{currentPage}</li>
+        )}
     </ol>
 </nav>

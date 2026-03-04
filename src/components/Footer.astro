@@ -2,34 +2,34 @@
 import {Image} from "astro:assets";
 import logo from '../assets/logo2.png';
 ---
-<footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+<footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10 flex flex-col items-center text-center sm:grid sm:text-left sm:items-start">
 
     <!-- logo gauche -->
-    <aside>
+    <aside class="flex flex-col items-center">
         <a href="/">
             <Image 
                 src={logo}
                 alt="Logo proxi'clean qui permet de revenir à l'accueil"
                 width={150}
                 height={150}
-                class="w-full h-full object-cover"
+                class="w-full h-full object-contain"
                 loading="lazy" 
             />
             <!-- <img src="/logo2.png" alt="Logo PROXI'CLEAN - Services de nettoyage professionnel" class="w-30 mb-2" /> -->
         </a>
     </aside>
-    <nav>
+    <nav class="flex flex-col items-center sm:items-start">
         <a href="/#services"><h6 class="footer-title">Nos Services</h6></a>
         <a href="/entretien" class="link link-hover">Entretien régulier</a>
         <a href="/specifique" class="link link-hover">Prestations spécifiques</a>
     </nav>
-    <nav>
+    <nav class="flex flex-col items-center sm:items-start">
         <h6 class="footer-title">L'entreprise</h6>
         <a href="/contact" class="link link-hover">Contact</a>
         <a href="/rejoindre" class="link link-hover">Rejoignez-nous</a>
     </nav> 
-    <nav>
-        <h6 class="footer-title">Légal</h6> 
+    <nav class="flex flex-col items-center sm:items-start">
+        <h6 class="footer-title">Informations</h6> 
         <a href="/mentions-legales" class="link link-hover">Mentions légales</a>
         <a href="/politique" class="link link-hover">Politique de confidentialité</a>
     </nav>
