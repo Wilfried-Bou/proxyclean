@@ -73,3 +73,4 @@ Toute personne qui t'a envoyé ses données a 4 droits fondamentaux :
     Droit d'opposition : Elle peut refuser que ses données soient utilisées pour autre chose que le recrutement (ex: ne pas mettre l'email d'un candidat dans ta liste de newsletter client).
 
     Les CV ne peuvent être garder que 2ans maximum.
+    google-site-verification=SU_9DgTLlXrBtTua20tacOBeldPT7nYTXGRxv0sRCB8
