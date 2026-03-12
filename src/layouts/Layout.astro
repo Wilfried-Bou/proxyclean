@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 
 const { 
-	title = "Proxi'Clean | Nettoyage Professionnel à Toulouse, en Occitanie et dans toute la France",
+	title = "Nettoyage Professionnel à Toulouse | Proxi'Clean Services",
 	description = "Proxi'Clean : Experts en nettoyage de bureaux, copropriétés et milieux industriels en Occitanie. Service réactif, agents formés et suivi de qualité."
 } = Astro.props;
 ---
@@ -26,6 +26,8 @@ const {
 		<meta property="og:image" content="/logo2.png" />
 		<meta property="og:url" content="https://proxiclean-services.fr" />
 		<meta property="og:type" content="website" />
+		<meta name="geo.region" content="FR-OCC" />
+		<meta name="geo.placename" content="Toulouse">
 	</head>
 	<body class="bg-base-100 text-base-content flex flex-col min-h-screen antialiased">
 		<Navbar />

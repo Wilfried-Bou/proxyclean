@@ -14,35 +14,41 @@ import picto5 from '../assets/vision/5auriculaire.png';
 	<Breadcrumb ></Breadcrumb>
 	<section class="relative bg-theme py-6 px-6 overflow-hidden">
 		<div class="absolute top-0 right-0 w-64 h-64 bg-secondaryTheme rounded-full blur-3xl opacity-20 -mr-32 -mt-32"></div>
-		
 		<div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
 			<div class="flex-1 text-center md:text-left">
-				<h1 class="text-4xl md:text-6xl font-black text-white uppercase leading-tight">
-					Le service<br/> <span class="text-secondaryTheme">autrement</span>
-				</h1>
-				<p class="mt-6 text-blue-100 text-lg max-w-lg">
-					Solutions de propreté, prestations techniques et services associés pour environnements exigeants.
-				</p>
-				<!-- <div class="mt-10 flex flex-wrap gap-4 justify-center md:justify-start">
-					<a href="/contact" class="btn bg-[#003A9A] hover:bg-[#052A6E] text-white border-none px-8">
-						Contactez-nous
-					</a>
-				</div> -->
-			</div>
+				<div class="inline-block px-3 py-1 mb-4 rounded-lg bg-white/10 border border-white/20 text-secondaryTheme font-bold text-sm uppercase tracking-widest">
+					Expert Nettoyage • Toulouse & Occitanie
+				</div>
 
+				<h1 class="text-4xl md:text-6xl font-black text-white uppercase leading-[1.1]">
+					Nettoyage <br/> 
+					<span class="text-secondaryTheme text-3xl md:text-5xl block mt-2">Professionnel</span>
+				</h1>
+
+				<p class="mt-4 text-white/80 font-medium italic text-lg italic uppercase tracking-wider">
+					"Le service autrement"
+				</p>
+
+				<p class="mt-6 text-blue-100 text-lg max-w-lg leading-relaxed">
+					Solutions de propreté, prestations techniques et services associés  à <span class="font-bold">Toulouse</span> et sur l’ensemble de l’<span class="font-bold">Occitanie</span>  avec des solutions de propreté adaptées aux environnements les plus exigeants.
+				</p>
+			</div>
+    
 			<div class="flex-1 flex justify-center md:justify-end">
-				<div class="bg-white p-8 md:p-12 rounded-2xl shadow-2xl over:scale-105 cursor-default">
+				<div class="bg-white p-8 md:p-12 rounded-2xl shadow-2xl hover:scale-105 transition-transform cursor-default">
 					<Image 
 						src={logo}
-						alt="Logo proxi'clean"
+						alt="Proxi'Clean - Entreprise de nettoyage professionnel à Toulouse"
 						width={250}
 						height={250}
 						class="w-full h-full object-cover"
 						loading="eager" 
+						fetchpriority="high"
 					/>
 				</div>
 			</div>
 		</div>
+		
 	</section>
 
 	<section id="qui-sommes-nous" class="bg-white m-8">
@@ -53,8 +59,10 @@ import picto5 from '../assets/vision/5auriculaire.png';
 				Une vision moderne des services de nettoyage.
 			</h3>
 			<div class="text-gray-700 space-y-4">
-				<p>Proxi'clean services, accompagne les professionnels avec une exigence élevée de qualité, de fiabilité et de réactivité.</p>
-				<p>Notre approche repose sur une organisation claire, des équipes spécialisées et une parfaite maitrise des environnements techniques.</p>
+				<p><span class="font-bold">Proxi'clean services</span>, implantée à <span class="font-bold">Toulouse</span> et intervenant sur l’ensemble de l’<span class="font-bold">Occitanie</span>, accompagne les professionnels avec une exigence élevée de qualité, de fiabilité et de réactivité.</p>
+
+				<p>Notre approche repose sur une organisation claire, des équipes spécialisées et une parfaite maîtrise des environnements techniques.</p>
+
 				<p>Chaque prestation est conçue comme une solution sur mesure, adaptée aux contraintes réelles de nos clients, avec un objectif constant : </p>
 				<p class="font-bold">Proposer un service différent.</p>
 			</div>
@@ -73,7 +81,7 @@ import picto5 from '../assets/vision/5auriculaire.png';
                     <div class="text-secondaryTheme mb-4 flex justify-center">
                         <Image 
 							src={picto1}
-							alt="Pictograme pouce"
+							alt="Symbole de soutien et de réactivité"
 							width="200"
 							height="200"
 							class="w-24 h-24 md:w-32 md:h-32 object-contain mx-auto"
@@ -89,14 +97,14 @@ import picto5 from '../assets/vision/5auriculaire.png';
                     <div class="text-secondaryTheme mb-4 flex justify-center">
                         <Image 
 							src={picto2}
-							alt="Pictograme index"
+							alt="Symbole de direction et d'organisation structurée"
 							width="200"
 							height="200"
 							class="w-24 h-24 md:w-32 md:h-32 object-contain mx-auto"
 							loading="lazy" 
 						/>
                     </div>
-                    <h3 class="font-bold text-theme leading-tight font-bold text-theme leading-tight min-h-[3rem] flex items-center justify-center">Une direction claire</h3>
+                    <h3 class="font-bold text-theme leading-tight min-h-[3rem] flex items-center justify-center">Une direction claire</h3>
                     <p class="text-sm text-gray-500 mt-2">Une organisation structurée, des engagements écrits et des procédures claires.</p>
 					<p class="text-sm text-gray-700 font-bold mt-2 text-sm text-gray-700 font-bold mt-auto pt-4">Des prestations maîtrisées.</p>
                 </div>
@@ -105,14 +113,14 @@ import picto5 from '../assets/vision/5auriculaire.png';
                     <div class="text-secondaryTheme mb-4 flex justify-center">
                         <Image 
 							src={picto3}
-							alt="Pictograme majeur"
+							alt="Symbole de mesure de la satisfaction client"
 							width="200"
 							height="200"
 							class="w-24 h-24 md:w-32 md:h-32 object-contain mx-auto"
 							loading="lazy" 
 						/>
                     </div>
-                    <h3 class="font-bold text-theme leading-tight font-bold text-theme leading-tight min-h-[3rem] flex items-center justify-center">Votre satisfaction</h3>
+                    <h3 class="font-bold text-theme leading-tight min-h-[3rem] flex items-center justify-center">Votre satisfaction</h3>
                     <p class="text-sm text-gray-500 mt-2">Vos contraintes, votre réalité terrain, vos priorités.</p>
 					<p class="text-sm text-gray-700 font-bold mt-2 text-sm text-gray-700 font-bold mt-auto pt-4">Chaque prestation s'adapte à votre site.</p>
 
@@ -122,14 +130,14 @@ import picto5 from '../assets/vision/5auriculaire.png';
                     <div class="text-secondaryTheme mb-4 flex justify-center">
                         <Image 
 							src={picto4}
-							alt="Pictograme annulaire"
+							alt="Symbole d'alliance et de partenariat durable"
 							width="200"
 							height="200"
 							class="w-24 h-24 md:w-32 md:h-32 object-contain mx-auto"
 							loading="lazy" 
 						/>
                     </div>
-                    <h3 class="font-bold text-theme leading-tight font-bold text-theme leading-tight min-h-[3rem] flex items-center justify-center">Des partenaires engagés</h3>
+                    <h3 class="font-bold text-theme leading-tight min-h-[3rem] flex items-center justify-center">Des partenaires engagés</h3>
                     <p class="text-sm text-gray-500 mt-2">Des fournisseurs fiables et réactifs, des solutions adaptées.</p>
 					<br>
 					<p class="text-sm text-gray-700 font-bold mt-2 text-sm text-gray-700 font-bold mt-auto pt-4">Une continuité de service assurée.</p>
@@ -139,14 +147,14 @@ import picto5 from '../assets/vision/5auriculaire.png';
                     <div class="text-secondaryTheme mb-4 flex justify-center">
                         <Image 
 							src={picto5}
-							alt="Pictograme auriculaire"
+							alt="Symbole de précision et de suivi minutieux"
 							width="200"
 							height="200"
 							class="w-24 h-24 md:w-32 md:h-32 object-contain mx-auto"
 							loading="lazy" 
 						/>
                     </div>
-                    <h3 class="font-bold text-theme leading-tight font-bold text-theme leading-tight min-h-[3rem] flex items-center justify-center">Le suivi et traçabilité</h3>
+                    <h3 class="font-bold text-theme leading-tight min-h-[3rem] flex items-center justify-center">Le suivi et traçabilité</h3>
                     <p class="text-sm text-gray-500 mt-2">Suivi des prestations, contrôles qualité tracés, indicateurs partagés.</p>
 					<p class="text-sm text-gray-700 font-bold mt-auto pt-4">Une propreté mesurée, des performances suivies et la garantie d’un service conforme à vos attentes.</p>
                 </div>
