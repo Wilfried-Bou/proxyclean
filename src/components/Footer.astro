@@ -1,6 +1,8 @@
 ---
 import {Image} from "astro:assets";
 import logo from '../assets/logo2.png';
+
+const currentYear = new Date().getFullYear();
 ---
 <footer class="footer sm:footer-horizontal bg-base-200 text-base-content p-10 flex flex-col items-center text-center sm:grid sm:text-left sm:items-start">
 
@@ -34,3 +36,13 @@ import logo from '../assets/logo2.png';
         <a href="/politique" class="link link-hover">Politique de confidentialité</a>
     </nav>
 </footer>
+
+<div class="footer footer-center p-4 bg-base-300 text-base-content border-t border-base-100">
+    <aside class="flex flex-col sm:flex-row gap-2 sm:gap-4 items-center opacity-75">
+        <p>© {currentYear} Proxi'Clean Services - Tous droits réservés.</p>
+        <span class="hidden sm:inline">|</span>
+        <a href="mailto:oufrid31@outlook.fr" class="hover:text-secondaryTheme transition-colors duration-300">
+            Réalisation : <span class="font-bold">wilbou.dev</span>
+        </a>
+    </aside>
+</div>

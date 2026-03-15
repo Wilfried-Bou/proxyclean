@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Page non trouvée | Proxi'Clean Services" description="Désolé, la page que vous recherchez n'existe pas ou a été déplacée.">
+    <section class="min-h-[70vh] flex items-center justify-center bg-white px-6">
+        <div class="max-w-md text-center">
+            <div class="text-secondaryTheme mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                </svg>
+            </div>
+            
+            <h1 class="text-6xl font-black text-primaryTheme mb-4">404</h1>
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 uppercase">Oups ! Cette page a été nettoyée de fond en comble.</h2>
+            
+            <p class="text-gray-600 mb-10">
+                Il semble que le contenu que vous cherchez n'est plus ici ou a changé de place. Pas de panique, nos équipes sont toujours prêtes à intervenir ailleurs !
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/" class="btn bg-primaryTheme text-white border-none hover:scale-105 transition-transform">
+                    Retour à l'accueil
+                </a>
+                <a href="/contact" class="btn bg-secondaryTheme text-white border-none hover:scale-105 transition-transform">
+                    Nous contacter
+                </a>
+            </div>
+        </div>
+    </section>
+</Layout>
