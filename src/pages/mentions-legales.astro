@@ -74,12 +74,40 @@ import Breadcrumb from '../components/Breadcrumb.astro';
                 </div>
 
                 <div class="bg-white p-8 rounded-2xl shadow-sm border-l-4 border-l-secondaryTheme">
-                    <h2 class="text-lg font-bold text-theme uppercase mb-4">Directeur de publication</h2>
+                    <h2 class="text-lg font-bold text-theme uppercase mb-4 flex items-center gap-2">
+                        <span class="w-2 h-2 bg-secondaryTheme rounded-full"></span>
+                        Directeur de publication
+                    </h2>
                     <p class="text-gray-600 text-sm">
                         Les Directeurs de la publication du Site sont <span class="font-bold">Mickaël Talagas</span>.
                         &
                         <span class="font-bold"> Benoit Roquecave</span>
                     </p>
+                </div>
+
+                <!-- Bloc Conception & Design -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border-l-4 border-l-theme">
+                    <h2 class="text-lg font-bold text-theme uppercase mb-4 flex items-center gap-2">
+                        <span class="w-2 h-2 bg-secondaryTheme rounded-full"></span>
+                        Conception & Design
+                    </h2>
+                    <div class="text-gray-600 space-y-3 text-sm leading-relaxed">
+                        <p>
+                            <span class="font-bold">Réalisation :</span> 
+                            <a href="mailto:oufrid31@outlook.fr?subject=Contact%20depuis%20le%20site%20Proxiclean-Service" 
+                            class="text-secondaryTheme font-medium hover:text-secondaryTheme hover:underline inline-flex items-center gap-1.5 transition-colors"
+                            title="Envoyer un e-mail au développeur">
+                                wilbou.dev
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 opacity-70 stroke-current" fill="none" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </a>
+                        </p>
+                        <p>
+                            <span class="font-bold">Crédits Photos :</span> 
+                            Proxiclean-Services, Libre de droit.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="bg-theme p-8 rounded-2xl shadow-lg text-white">
